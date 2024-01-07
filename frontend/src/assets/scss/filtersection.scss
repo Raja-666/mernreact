@@ -1,0 +1,326 @@
+.filtercard{
+    border-radius: 16px;
+    background: var(--dark-bg-dark-2, #15171C);
+    padding: 8px 0px;
+    width: 100%;
+    .filterTit{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        border: 0;
+        width: 100%;
+        padding: 5px 20px;
+        outline: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        i.fas{
+            padding: 0px 5px;
+        }
+        &:hover, &:focus, &:active, &:not(:disabled):active{
+            box-shadow: none !important;
+            outline: 0;
+            background-color: transparent;
+        }        
+    }
+}
+
+.filtersubTit{
+    padding: 5px 20px 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-text-secondary, #C5C5C5);
+}
+
+.collapseCnt{
+    padding: 5px 20px;
+}
+.filterInnercard{
+    border-radius: 12px;
+    background: var(--dark-input-button, #191D22);
+    padding: 16px;
+}
+
+.rightcounttxt{
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+color: var(--dark-text-secondary, #C5C5C5);
+}
+
+.cuschk {
+	// display: block;
+	// position: relative;
+	// cursor: pointer;
+	// height: 20px;
+	// width: 20px;
+	// -webkit-user-select: none;
+	// -moz-user-select: none;
+	// -ms-user-select: none;
+	// user-select: none;
+
+	// /* Hide the browser's default checkbox */
+	// input {
+	// 	position: relative;
+	// 	opacity: 0;
+	// 	cursor: pointer;
+	// 	height: 0;
+	// 	width: 0;
+	// }
+
+	// /* Create a custom checkbox */
+	// .checkmark {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	height: 20px;
+	// 	width: 20px;
+	// 	background-color: #191D22;
+	// 	border: 1px solid #2E343D;
+	// 	border-radius: 3px;
+	// }
+
+	// /* On mouse-over, add a grey background color */
+	// &:hover input~.checkmark {
+	// 	background-color: #181B20;
+	// 	border: 1px solid #2E343D;
+	// 	border-radius: 3px;
+	// }
+
+	// /* When the checkbox is checked, add a blue background */
+	// input:checked~.checkmark {
+	// 	background-color: #55f764;
+	// 	border: 1px solid #55f764;
+	// 	border-radius: 3px;
+	// }
+
+	// /* Create the checkmark/indicator (hidden when not checked) */
+	// .checkmark:after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	display: none;
+	// }
+
+	// /* Show the checkmark when checked */
+	// input:checked~.checkmark:after {
+	// 	display: block;
+	// }
+
+	// /* Style the checkmark/indicator */
+	// .checkmark:after {
+	// 	left: 7px;
+	// 	top: 3px;
+	// 	width: 5px;
+	// 	height: 10px;
+	// 	border: solid #0A0A0B;
+	// 	border-width: 0 1.5px 1.5px 0;
+	// 	-webkit-transform: rotate(45deg);
+	// 	-ms-transform: rotate(45deg);
+	// 	transform: rotate(45deg);
+	// }
+
+    & + h3{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text, #F6F6F6);
+    }
+}
+
+.filterStatusbtn{
+    border-radius: 8px;
+    background: var(--dark-input-button, #191D22);
+    padding: 4px 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border: 0px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    color: var(--dark-text, #F6F6F6);
+    &.active, &:hover{
+        border-radius: 8px;
+        color: var(--dark-bg-dark-1, #0A0A0B);
+        background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+    }
+}
+
+
+
+.formInputs{
+    .input-group{
+        border-radius: 12px;
+        border: 1px solid var(--dark-borders-button-text-inactive, #2E343D);
+        background: var(--dark-input-button, #191D22);
+        backdrop-filter: blur(19px);
+        padding: 8px 12px;
+        align-items: center;
+        height: 40px;
+        flex: 1 0 auto;
+        .form-control{
+            background-color: transparent;
+            border: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: auto;
+            border-radius: 0;
+            padding: 0px 2px;
+            &:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        .input-group-text{
+            background-color: transparent;
+            border: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &:focus-within{
+            border-color: #55f764;
+        }
+    }
+    .form-control{
+        border-radius: 12px;
+        border: 1px solid var(--dark-borders-button-text-inactive, #2E343D);
+        background-color: var(--dark-input-button, #191D22);
+        padding: 8px 16px;
+        align-items: center;
+        height: 40px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text);
+        &:focus{
+            outline: 0;
+            box-shadow: none;
+            border-color: #55f764;
+        }
+    }
+    select {
+        appearance: none;
+        // background-image: url('data:image/svg+xml;utf8,<svg width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M5.71875 5.875L1.09375 1.28125C0.9375 1.15625 0.9375 0.90625 1.09375 0.75L1.71875 0.15625C1.875 0 2.09375 0 2.25 0.15625L6 3.84375L9.71875 0.15625C9.875 0 10.125 0 10.25 0.15625L10.875 0.75C11.0312 0.90625 11.0312 1.15625 10.875 1.28125L6.25 5.875C6.09375 6.03125 5.875 6.03125 5.71875 5.875Z" fill="#F7F7F7"/></svg>');
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23F6F6F6%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23f6f6f6%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px top 50%;
+        padding-right: 30px !important;
+    }
+}
+
+.rightTxt{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text, #F6F6F6);
+}
+
+.applybtn{
+    border-radius: 12px;    
+    background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--dark-bg-dark-1, #0A0A0B);
+    padding: 6px 20px;
+    border: 0;
+    display: block;
+    width: 100%;
+    &:hover{
+        background: var(--dark-input-button, #191D22);       
+        color: var(--dark-text, #F6F6F6);
+    }
+    &:disabled{
+        pointer-events: none;
+        opacity: 0.32;
+    }
+}
+
+.htcheckbox{
+    max-height: 275px;
+    overflow: auto;
+    padding-right: 10px;
+    margin-right: -10px;
+}
+
+// custom scroll
+.scroller::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 0px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background-color: #2E343D;
+    /* outline: 1px solid #1e202a; */
+    border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 4px rgba(0,0,0,0.2); */
+    background-color: transparent;
+}
+
+@-moz-document url-prefix() {
+    .scroller {
+        scrollbar-width: thin;
+        scrollbar-color: #2E343D;
+    }
+}
+.ellipsisTxt{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80px;
+    white-space: nowrap;
+}
+
+
+body.light-mode{
+    .filtercard{        
+        background: var(--light-bg-2, #F2F3F5);
+        .filterTit, .filterTit:active{
+            color: var(--light-text, #14161B);
+        }
+        .filtersubTit{
+            color: var(--light-text-secondary, #474C55);
+        }
+        .rightcounttxt{
+            color: var(--light-text-secondary, #474C55);
+        }
+    }
+    .filterStatusbtn{
+        background: var(--light-input-button);
+        color: var(--light-text);
+        &:hover{
+            background: var(--light-gradient-light);
+        }
+    }
+    .filterInnercard{
+        background: var(--light-input-button);
+    }
+    .filterLabel{
+        color: var(--light-text);
+    }
+    .rightTxt{
+        color: var(--light-text)
+    }
+    
+// custom scroll
+    .scroller::-webkit-scrollbar-thumb {
+        background-color: #D5D8DC;        
+    }
+
+    .scroller::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    @-moz-document url-prefix() {
+        .scroller {
+            scrollbar-width: thin;
+            scrollbar-color: #D5D8DC;
+        }
+    }
+}

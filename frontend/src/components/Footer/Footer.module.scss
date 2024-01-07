@@ -1,0 +1,225 @@
+.ftr {
+   background: var(--dark-bg-dark-1, #0A0A0B);
+   padding-top: 60px;
+   position: relative;
+   overflow: hidden;
+}
+
+.ftLogo {
+   margin-bottom: 2.5rem;
+}
+
+
+.ftrTp {
+   padding-bottom: 20px;
+   position: relative;
+
+   .glow1 {
+      position: absolute;
+      border-radius: 318.564px;
+      opacity: 0.2;
+      background: var(--dark-primary-5, #FBFCD4);
+      filter: blur(130px);
+      width: 318.564px;
+      height: 309.653px;
+      transform: rotate(-34.42deg);
+      top: 0px;
+      left: -237px;
+      pointer-events: none;
+   }
+
+   .glow2 {
+      position: absolute;
+      border-radius: 272.941px;
+      opacity: 0.2;
+      background: var(--dark-primary-5, #FBFCD4);
+      filter: blur(130px);
+      width: 272.941px;
+      height: 265.306px;
+      transform: rotate(-34.42deg);
+      pointer-events: none;
+      top: 1px;
+      right: -46px;
+      @media only screen and (max-width: 1199px)
+      {
+         top: 70%;
+      }
+   }
+
+   .glow3 {
+      position: absolute;
+      width: 252.169px;
+      height: 245.103px;
+      transform: rotate(-34.42deg);
+      background: var(--dark-primary-1, #55f764);
+      opacity: 0.4;
+      filter: blur(140px);
+      pointer-events: none;
+      bottom: 0px;
+      right: 208px;
+      @media only screen and (max-width: 1199px)
+      {
+         display: none;
+      }
+   }
+}
+
+.ftrMuTl {
+   font-size: 20px;
+   color: #ffffff;
+   line-height: 1.6;
+}
+
+.ftrSbs {
+   @media only screen and (min-width: 576px) {
+      max-width: 280px;
+   }
+
+   :global(.form-control) {
+      border-radius: 12px;
+      border: 1px solid #2E343D;
+      background: #191D22;
+      backdrop-filter: blur(19px);
+      padding: 8px 12px;
+      height: auto;
+      color: #ffffff;
+
+      &:focus {
+         box-shadow: none;
+      }
+
+      &::placeholder {
+         color: #595F6A;
+      }
+   }
+}
+
+
+.ftMnu {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   list-style: none;
+   margin: 0px;
+
+   a {
+      font-size: 16px;
+      color: #C5C5C5;
+      text-decoration: none;
+
+      &:hover {
+         color: #55f764;
+      }
+   }
+}
+
+.ftrC {
+   padding-bottom: 40px;
+}
+
+.ftrScl {
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+
+   a {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #191D22;
+      border-radius: 12px;
+      transition: 0.3s transform;
+
+      &:hover {
+         transform: translateY(-5px);
+      }
+   }
+}
+
+
+.ftrBm {
+   background-color: #15171C;
+   padding: 5px 0px;
+   position: relative;
+}
+
+.ftBmMu {
+   list-style: none;
+   padding: 15px 0px;
+   margin: 0px;
+   display: flex;
+   align-items: center;
+   gap: 103px;
+
+   a {
+      color: #C5C5C5;
+   }
+
+   @media only screen and (max-width: 991px) {
+      justify-content: center;
+      gap: 20px 30px;
+      flex-wrap: wrap;
+   }
+}
+
+.ftrCpr {
+   margin: 0px;
+   font-size: 16px;
+   color: #C5C5C5;
+
+   @media only screen and (max-width: 991px) {
+      text-align: center;
+   }
+}
+
+.darkLogo{
+   display: block;
+}
+.lightLogo{
+   display: none;
+}
+
+:global(body.light-mode){
+   .ftr {
+      background: var(--light-bg-1, #0A0A0B);
+   }
+   .darkLogo{
+      display: none;
+   }
+   .lightLogo{
+      display: block;
+   }
+   .ftrMuTl{
+      color: var(--light-grey);
+   }
+   .ftMnu{
+      a{
+         color: var(--light-text-secondary);
+      }
+   }
+   .ftrScl li a{
+      background: var(--light-input-button);
+      img{
+         filter: brightness(0);
+      }
+   }
+   .ftrBm{
+      background-color: var(--light-bg-2);
+      .ftBmMu a, .ftrCpr{
+         color: var(--light-text-secondary);
+      }
+   }
+   .ftrSbs {
+      :global(.form-control) {
+         border: 1px solid var(--light-borders-hover-button, #D5D8DC);
+         background: var(--light-input-button, #E0E3E7);
+         backdrop-filter: blur(19px);
+         color: var(--light-text-grey, #73767D);
+      }
+   }
+}

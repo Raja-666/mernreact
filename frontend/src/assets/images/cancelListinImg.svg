@@ -1,0 +1,53 @@
+<svg width="230" height="214" viewBox="0 0 230 214" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g opacity="0.8" filter="url(#filter0_f_2161_21802)">
+<path d="M144.805 144.804C148.719 140.89 151.823 136.244 153.942 131.13C156.06 126.016 157.15 120.535 157.15 115C157.15 109.464 156.06 103.983 153.942 98.8696C151.823 93.7557 148.719 89.1092 144.805 85.1952C140.891 81.2812 136.244 78.1764 131.13 76.0582C126.016 73.94 120.535 72.8497 115 72.8497C109.465 72.8497 103.984 73.94 98.8699 76.0582C93.756 78.1764 89.1094 81.2812 85.1955 85.1952L115 115L144.805 144.804Z" fill="#55f795"/>
+</g>
+<g opacity="0.8" filter="url(#filter1_f_2161_21802)">
+<path d="M85.1954 85.1957C81.2815 89.1097 78.1767 93.7563 76.0585 98.8702C73.9402 103.984 72.85 109.465 72.85 115C72.85 120.536 73.9402 126.017 76.0585 131.13C78.1767 136.244 81.2815 140.891 85.1955 144.805C89.1094 148.719 93.756 151.824 98.8699 153.942C103.984 156.06 109.465 157.15 115 157.15C120.535 157.15 126.016 156.06 131.13 153.942C136.244 151.824 140.891 148.719 144.805 144.805L115 115L85.1954 85.1957Z" fill="#FFA800"/>
+</g>
+<rect x="79.8091" y="79.8086" width="70.3818" height="70.3818" rx="12" fill="#1D2025"/>
+<rect width="48" height="48" transform="translate(91 91)" fill="url(#pattern0)"/>
+<g clip-path="url(#clip0_2161_21802)">
+<path opacity="0.05" d="M129.5 115C129.5 112.248 128.717 109.554 127.243 107.231C125.768 104.907 123.663 103.052 121.174 101.88" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.1" d="M129.5 115C129.5 111.312 128.095 107.763 125.57 105.074" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.3" d="M129.5 115C129.5 113.172 129.155 111.361 128.482 109.662" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path d="M128 115C128 114.973 128 114.946 128 114.918" stroke="#FFA800" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#clip1_2161_21802)">
+<path opacity="0.05" d="M107.75 102.442C105.367 103.817 103.425 105.843 102.15 108.281C100.875 110.72 100.321 113.47 100.551 116.212" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.1" d="M107.75 102.442C104.556 104.286 102.185 107.277 101.119 110.808" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.3" d="M107.75 102.442C106.167 103.355 104.772 104.56 103.636 105.992" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path d="M108.5 103.741C108.476 103.754 108.453 103.768 108.429 103.782" stroke="#FFA800" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#clip2_2161_21802)">
+<path opacity="0.05" d="M107.75 127.558C110.133 128.934 112.858 129.603 115.607 129.488C118.356 129.373 121.016 128.478 123.275 126.908" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.1" d="M107.75 127.558C110.944 129.402 114.72 129.96 118.311 129.118" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path opacity="0.3" d="M107.75 127.558C109.333 128.472 111.074 129.078 112.882 129.345" stroke="#FFA800" stroke-width="3" stroke-linecap="round"/>
+<path d="M108.5 126.259C108.524 126.273 108.547 126.286 108.571 126.3" stroke="#FFA800" stroke-width="6" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_f_2161_21802" x="13.1953" y="0.851562" width="215.955" height="215.953" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="36" result="effect1_foregroundBlur_2161_21802"/>
+</filter>
+<filter id="filter1_f_2161_21802" x="0.850098" y="13.1953" width="215.955" height="215.953" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="36" result="effect1_foregroundBlur_2161_21802"/>
+</filter>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2161_21802"/>
+</pattern>
+<clipPath id="clip0_2161_21802">
+<rect width="32" height="32" fill="white" transform="translate(99 99)"/>
+</clipPath>
+<clipPath id="clip1_2161_21802">
+<rect width="32" height="32" fill="white" transform="translate(109.144 136.855) rotate(-120)"/>
+</clipPath>
+<clipPath id="clip2_2161_21802">
+<rect width="32" height="32" fill="white" transform="translate(136.856 109.145) rotate(120)"/>
+</clipPath>
+<image id="image0_2161_21802" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAQUA+v8AAAAAAAAFAAFkeJU4AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

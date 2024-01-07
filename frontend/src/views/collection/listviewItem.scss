@@ -1,0 +1,167 @@
+
+
+.cuschk {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Hide the browser's default checkbox */
+	input {
+		position: relative;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 20px;
+		width: 20px;
+		background-color: #191D22;
+		border: 1px solid #2E343D;
+		border-radius: 3px;
+	}
+
+	/* On mouse-over, add a grey background color */
+	&:hover input~.checkmark {
+		background-color: #181B20;
+		border: 1px solid #2E343D;
+		border-radius: 3px;
+	}
+
+	/* When the checkbox is checked, add a blue background */
+	input:checked~.checkmark {
+		background-color: #55f764;
+		border: 1px solid #55f764;
+		border-radius: 3px;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	input:checked~.checkmark:after {
+		display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	.checkmark:after {
+		left: 7px;
+		top: 3px;
+		width: 5px;
+		height: 10px;
+		border: solid #0A0A0B;
+		border-width: 0 1.5px 1.5px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+    & + h3{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text, #F6F6F6);
+    }
+}
+
+.tblImg{
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.18);
+        margin-right: 15px;
+    }
+}
+.fw-600{
+    font-weight: 600;
+}
+.dark-text-grey{
+    color: var(--dark-text-grey, #595F6A);
+}
+.dark-primary{
+    color: var(--dark-primary-1, #55f764);
+}
+.dark-text-secondary{
+    color: var(--dark-text-secondary, #C5C5C5);
+}
+
+.btnBuynow{
+    border-radius: 8px;
+    background: var(--dark-input-button, #191D22);
+    border: 0px;
+    height: 28px;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: 28px;
+    width: 96px;
+    color: var(--dark-text, #F6F6F6);
+    &:hover{
+        border-radius: 8px;
+        background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        color: var(--dark-bg-dark-1, #0A0A0B);
+    }
+}
+
+.listViewTable{
+    thead{
+        tr{
+            th{
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                color: var(--dark-text-grey, #595F6A);
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                color: var(--dark-text, #F6F6F6);
+                vertical-align: middle;
+                &:nth-child(2){
+                    min-width: 300px;
+                }
+            }
+            &:hover{
+                border-radius: 12px;
+                td{
+                    &:first-child{
+                        border-start-start-radius: 12px;
+                        border-end-start-radius: 12px;
+                    }
+                    &:last-child{
+                        border-start-end-radius: 12px;
+                        border-end-end-radius: 12px;
+                    }
+                }
+                background: var(--dark-bg-dark-2, #15171C);
+            }
+        }
+    }
+}
+
+

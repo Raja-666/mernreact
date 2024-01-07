@@ -1,0 +1,227 @@
+.mycollectionSec{   
+    .createCollectionCard{
+        .borderedCnt{
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            align-items: center;
+            align-self: stretch;
+            border-radius: 12px;
+            border: 1px solid var(--dark-borders-hover-button, #2D3139);
+            /* BG Blur - Button */
+            backdrop-filter: blur(19px);
+
+            h3{
+                color: var(--dark-text-secondary, #C5C5C5);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 0px;
+            }
+            .valueLabel{
+                color: var(--dark-text, #F6F6F6);
+                text-align: right;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                 span{
+                    color: var(--dark-text-grey, #797F8A);
+                    text-align: right;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                 }
+            }
+            .valueRow{
+                width:100%;
+            }
+        }    
+
+        .lfsItemCnt{
+            width:100%;
+            display:flex;
+            align-items: center;
+            border-radius: 16px;
+            background: var(--dark-input-button, #1D2025);
+            /* BG Blur - Button */
+            backdrop-filter: blur(19px);
+            overflow: hidden;
+            flex-wrap:wrap;
+
+            .itemImg{
+                width:85px;
+                height:85px;
+                object-fit: cover;
+
+                @media(max-width:400px){
+                    margin:15px auto;
+                    border-radius:8px;
+                }
+            }
+
+            .itemValueCnt{
+                width:calc(100% - 85px);
+                padding:16px;
+
+                @media(max-width:575px){
+                    width:100%;
+                    padding:8px;
+                }
+
+                h3{
+                    color: var(--dark-text, #F6F6F6);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+                span{
+                    color: var(--dark-text-secondary, #C5C5C5);
+                    text-align: right;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        form{
+            select{
+                background:transparent;
+                border:none;
+                padding:0px;
+                padding-right:15px;
+                background: url('../../assets/images/angleDown.svg') no-repeat center right;
+                color: var(--dark-text, #F6F6F6);
+                appearance:none;
+                
+                option{
+                    background:var(--dark-input-button, #1D2025);
+                    color: var(--dark-text, #F6F6F6);
+                }
+
+                :focus,:focus-visible{
+                    border:none;
+                    box-shadow: none;
+                }
+            }
+
+            .dropdown{
+                .dropdown-menu{
+                    width:100%;
+                }
+            }
+        }
+
+        .nav-tabs{
+            border: 0px;
+            li{
+                margin-right: 15px;
+                a{
+                    min-width:150px;
+                    padding:16px;
+                    text-align: center;
+                    color: var(--dark-text, #F6F6F6);
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 20px;
+                    border: 1px solid var(--dark-borders-hover-button, #2D3139);
+                    background: rgb(255,169,0);
+                    background: linear-gradient(153deg, rgba(255,169,0,1) 0%, rgba(255,255,255,0) 50%, rgba(255,237,174,1) 100%);
+                    transition: all 0.5s;
+                    position: relative;
+                    border-radius:16px;
+
+                    span{
+                        position: relative;
+                        z-index: 3;
+                    }
+
+                    &:before{
+                        content:'';
+                        background: var(--dark-bg-2, #14161B);
+                        width:100%;
+                        height:100%;
+                        position: absolute;
+                        left:0px;
+                        top:0px;
+                        border-radius: 0px;
+                        z-index: 1;
+                        transition: all 0.5s;
+                    }
+            
+                    &:hover,&.active{
+                        cursor: pointer;
+            
+                        &::before{
+                            width:calc(100% - 4px);
+                            height:calc(100% - 4px);
+                            left:2px;
+                            top:2px;
+                            border-radius:12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.curMdl{
+    p{
+        color: var(--dark-text, #F6F6F6);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+
+body.light-mode{
+    .mycollectionSec .createCollectionCard{
+        .borderedCnt{
+            border: 1px solid var(--light-borders-hover-button);
+            h3 {
+                color: var(--light-text-secondary);
+            }
+            .valueLabel {
+                color: var(--light-text);
+            }
+        }
+        .lfsItemCnt {
+            background: var(--light-input-button);
+            .itemValueCnt {
+                span {
+                    color: var(--light-text-secondary);
+                }
+                h3{
+                    color: var(--light-text);
+                }
+            }
+        }
+        .nav-tabs li a{
+            border: 1px solid var(--light-borders-hover-button);
+            color: var(--light-text);
+            &:before {
+                content: '';
+                background: var(--light-bg-2);
+            }
+        }
+        form select{
+            color: var(--light-text);
+            filter: brightness(0.3);
+            outline: none;
+            box-shadow: none;
+        }
+    }    
+}

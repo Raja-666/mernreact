@@ -1,0 +1,240 @@
+.userDetails{
+    :global(.imgtag)
+    {
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 30px;
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;            
+            box-shadow: 0px 0px 27px 0px #FFF;
+        }
+    }
+    :global(.userName){
+        font-size: 20px;
+        font-family: var(--font-russo);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        margin-bottom: 4px;
+    }
+    :global(.usernameby){
+        span:global(.fw-400){
+            font-weight: 400;
+            color: #f6f6f6;
+        }
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+}
+
+
+.userDescpara{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+   color: var(--dark-text, #F6F6F6);
+   margin-bottom: 4px;
+}
+
+.readmorebtn{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    color: var(--dark-text-grey, #595F6A);
+
+}
+
+.socialmediaBtnGrid{
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
+.iconBtn{
+    border-radius: 12px;
+    background: var(--dark-input-button, #191D22);    
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    box-shadow: none !important;
+    outline: none !important;
+    &:hover, &:focus{
+        background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%)) !important;
+    }
+}
+
+.dropdownMenu{
+    border-radius: 8px;
+    background: rgba(37, 42, 49, 0.70);
+    backdrop-filter: blur(19px);
+    margin-top: 8px;
+   :global(.dropdown-item){
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--dark-text, #F6F6F6);
+    &:hover{
+        background-color: transparent;
+    }
+   }
+}
+
+.moredetailsCnt{
+display: flex;
+padding: 0px 16px;
+justify-content: center;
+align-items: flex-start;
+gap: 32px;
+margin-top: 28px;
+margin-bottom: 32px;
+flex-wrap: wrap;
+    :global(.listDetails){
+        :global(.listchild1){
+            color: var(--dark-text-secondary, #C5C5C5);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            span:global(.text-green){
+                color: var(--dark-green, #1BFA70);
+            }
+            span:global(.text-red){
+                color: var(--dark-red, #FA0B00);
+            }
+        }
+        :global(.listchild2){
+            color: var(--dark-text, #F6F6F6);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+        }
+    }
+}
+
+.borderbottom{
+    border-bottom: 1px solid #191D22;
+}
+
+.mycollectiontabs{
+border-radius: 12px;
+background: var(--dark-input-button, #191D22);
+backdrop-filter: blur(19px);
+display: inline-flex;
+border: 0;
+margin-bottom: 32px;
+min-height: 40px;
+li:global(.nav-item){
+    margin-right: 5px;
+    &:last-child{
+        margin-right: 0px;
+    }
+    a:global(.nav-link){
+        color: rgba(197, 197, 197, 0.6);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        border-radius: 12px;
+        border: 0;
+        padding: 8px 20px;
+        margin-right: 0px;
+        &:hover, &:global(.active){            
+            background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+            color: var(--dark-bg-dark-1, #0A0A0B);
+            font-weight: 600;
+        }
+    }
+}
+}
+
+.collectOfferBtn{
+    border-radius: 12px;
+    background: var(--dark-input-button, #191D22);
+    color: var(--dark-text, #F6F6F6);
+    padding: 8px 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border: 0;
+    transition: 0.3s linear;
+    &:hover{            
+        background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+        color: var(--dark-bg-dark-1, #0A0A0B);
+        font-weight: 600;
+    }
+}
+
+
+:global(body.light-mode){
+    .iconBtn{
+        background: var(--light-input-button, #E0E3E7);
+        img{
+            filter: brightness(0.2);
+        }
+    }
+    .dropdownMenu{        
+        background: rgba(224, 227, 231, 0.70);
+        border-color: transparent;
+        backdrop-filter: blur(19px);
+        :global(.dropdown-item){
+            color: var(--light-text, #14161B);
+            img{
+                filter: invert(0.8);
+            }
+        }
+    }
+    .userDescpara{
+        color: var(--light-text, #14161B);
+    }
+    .readmorebtn{
+        color: var(--light-text-grey, #73767D);
+    }
+    .moredetailsCnt {
+        :global(.listDetails){
+            :global(.listchild1){
+                 color: var(--light-text-grey, #73767D);
+            }
+            :global(.listchild2){
+                color: var(--light-text, #14161B);
+            }
+        }
+    }
+    .borderbottom{
+        border: 1px solid var(--light-input-button, #E0E3E7);
+    }
+    .mycollectiontabs{
+        background: var(--light-input-button, #E0E3E7);
+        li:global(.nav-item){
+            a:global(.nav-link){
+                color: var(--light-text-grey, #73767D);   
+                background-color: transparent;             
+                &:hover, &:global(.active){            
+                    background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+                    color: var(--Button-Text, #0A0A0B);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .collectOfferBtn{
+        background: var(--light-gradient-light, linear-gradient(137deg, #FFAB00 6.3%, #FFD76F 95.08%));
+        color: var(--Button-Text, #0A0A0B);
+        &:hover{
+            background: var(--light-input-button, #E0E3E7);
+        }
+    }
+
+}

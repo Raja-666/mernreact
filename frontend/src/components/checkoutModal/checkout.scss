@@ -1,0 +1,102 @@
+
+.modal-dialog.mymodal{
+    @media only screen and (min-width: 576px) {
+        max-width: 420px;
+     }
+    .modal-content{
+        border-radius: 20px;
+        background: var(--dark-bg-dark-2, #15171C);
+        box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.16);
+        .modal-header{
+            border: 0px;
+        }
+        .modal-title{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--dark-text, #F6F6F6);
+            text-align: center;
+            margin: 0 auto;
+        }
+        .close{
+            margin-left: -26px;
+        }
+    }    
+        
+}
+
+.btn.btn-clear, .removebtn{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+
+.cartItem{
+    border-radius: 16px;
+    background: var(--dark-input-button, #1F2329);
+    backdrop-filter: blur(19px);
+    display: flex;
+    margin-bottom: 16px;
+    .itemImg{
+        width: 84px;
+        height: 84px;
+        margin-right: 1px;
+        border-radius: 8px 0px 0px 8px;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.18);
+        img{
+            width: 84px;
+            height: 84px;
+            border-radius: 8px 0px 0px 8px;
+        }
+    }
+    .itemName{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text-secondary, #C5C5C5);
+    }
+    .itemId{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .itemBal{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text, #F6F6F6);
+    }
+    
+}
+
+.checkTit{
+color: var(--dark-text, #F6F6F6);
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px;
+}
+.subcheckTxt{
+color: var(--dark-text-secondary, #C5C5C5);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
+
+.mb12px{
+    margin-bottom: 12px;
+}
+
+
+.checkoutBtn{
+border-radius: 8px;
+background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+padding: 8px 20px;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+color: var(--dark-bg-dark-1, #0A0A0B);
+}

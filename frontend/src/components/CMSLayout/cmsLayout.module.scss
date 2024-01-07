@@ -1,0 +1,143 @@
+.bannerParent{
+    position: relative;
+    z-index: 0;
+}
+
+.cl_banner{
+    position: relative;    
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     top: 0;
+    //     height: calc(100% - 96px);
+    //     background: linear-gradient(180deg, #090A0C 0%, rgba(9, 10, 12, 0.62) 53.12%, rgba(9, 10, 12, 0.00) 100%);
+    // }
+    // &::after{
+    //     content: '';
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background: linear-gradient(0deg, #090A0C 0%, rgba(9, 10, 12, 0.62) 38.19%, rgba(9, 10, 12, 0.00) 100%);
+    //     height: 96px;
+    // }    
+}
+
+.bannerContent{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    min-height: 284px;
+}
+.maxwidthcnt{
+    max-width: 645px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+.bannerTit{
+    font-family: var(--font-russo);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--dark-text, #F6F6F6);
+    margin-bottom: 24px;
+    span{        
+        background: var(--dark-gradient, linear-gradient(137deg, #55f764 6.3%, #55f795 95.08%, #FFF6A4 95.08%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.getintouchSec{
+    text-align: center;
+    background-image: url('../../assets/images/helpcenter/getInTouch.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 15px;
+    :global(.secTit){
+        font-family: var(--font-russo);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        span{
+            background: var(--dark-gradient, linear-gradient(137deg, #55f764 6.3%, #55f795 95.08%, #FFF6A4 95.08%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    :global(.git_wizard){
+        max-width: 600px;
+        display: inline-flex;
+        align-items: center;
+        padding: 36px 72px;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        border-radius: 16px;
+        border: 2px solid transparent;
+        background: linear-gradient(137deg, rgba(255, 255, 255, 0.04) -6.35%, rgba(255, 255, 255, 0.02) 105.62%);
+        
+        backdrop-filter: blur(37.22630310058594px);
+        position: relative;
+        &:global(::after){
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: -2px;
+            border: 2px solid transparent;
+            border-radius: 16px;
+            background: linear-gradient(0deg, rgba(21, 23, 28, 0), rgba(21, 23, 28, 0)) padding-box, linear-gradient(135deg, #55f764 0%, rgba(255, 255, 255, 0) 50%, #55f795 100%) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);
+            -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        :global(.iconbx){
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(19px);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            margin-bottom: 20px;
+
+        }
+        :global(.IconRTxt){
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--dark-text, #F6F6F6);
+            margin-bottom: 20px;
+        }
+    }
+}
+
+:global(body.light-mode) {
+    .cl_banner{
+        position: relative;       
+        background:var(--dark-bg-2);        
+    }
+    .getintouchSec{
+        background-color: var(--dark-bg-1);
+    }
+}
+

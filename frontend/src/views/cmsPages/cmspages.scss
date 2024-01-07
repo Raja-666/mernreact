@@ -1,0 +1,73 @@
+
+.cmsTit{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--dark-text, #F6F6F6);
+}
+.cmsSubTit{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; 
+    color: var(--dark-text, #F6F6F6);
+    margin-bottom: 16px;
+}
+
+.cmsdateTxt{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    color: var(--dark-text-grey, #797F8A);
+}
+.cmsPage {
+    p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+        color: var(--dark-text-secondary, #C5C5C5);
+        margin-bottom: 24px;
+    }
+}
+
+.cmsUlList{
+    list-style-image: url('../../assets/images/bulletIcon.png');
+    padding-left: 15px;
+    li{
+        padding-left: 15px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; 
+        color: var(--dark-text-secondary, #C5C5C5);
+        margin-bottom: 16px;
+    }
+}
+
+
+body.light-mode{    
+    .cmsTit{       
+        color: var(--light-text);
+    }
+    .cmsSubTit{      
+        color: var(--light-text);
+    }    
+    .cmsdateTxt{    
+        color: var(--light-text-grey);
+    }
+    .cmsPage {
+        p{            
+            color: var(--light-text-secondary);
+        }
+    }
+    
+    .cmsUlList{        
+        li{            
+            color: var(--light-text-secondary);
+        }
+    }
+    
+}

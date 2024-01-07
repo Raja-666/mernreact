@@ -1,0 +1,170 @@
+
+.tilebox{
+    border-radius: 12px;
+    background: var(--dark-bg-2, #14161B);
+    border: 1px solid var(--dark-bg-2, #14161B);
+    backdrop-filter: blur(19px);
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 28px;
+    min-height: 112px;
+    cursor: pointer;
+    .iconwizard{
+        border-radius: 8px;
+        background: var(--dark-input-button, #1D2025);
+        padding: 10px;
+        width: 40px;
+        height: 40px;       
+        margin:  0 auto 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s linear;
+    }
+    .tileName{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        color: var(--dark-text, #F6F6F6);
+    }
+    &:hover{
+        border-color: var(--Primary-1);
+        .iconwizard{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.verticalline{
+    margin: 0px 12px;
+    display: inline-block;
+    border-left: 2px solid var(--dark-input-button);
+    height: 15px;
+    vertical-align: middle;
+}
+.hpCateActive{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-text-secondary, #C5C5C5);
+    .active{
+        color: var(--dark-text, #F6F6F6);
+        font-weight: 700;
+    }
+}
+
+.quesListItem{
+border-radius: 12px;
+background: var(--dark-bg-2, #14161B);
+backdrop-filter: blur(19px);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+color: var(--dark-text, #F6F6F6);
+padding: 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+
+.fiterSelectlabel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .tagLabel{
+        border-radius: 8px;
+        background: var(--dark-input-button, #191D22);
+        min-height: 28px;
+        padding: 4px 8px;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text, #F6F6F6);
+        margin-bottom: 8px;
+        .background{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;            
+            color: var(--dark-text-grey, #595F6A);
+            padding-right: 10px;
+        }
+    }
+}
+
+.backbtn{
+    border-radius: 8px;
+    background: var(--dark-input-button, #1D2025);
+    border: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.paraTxt p{
+    color: var(--dark-text-secondary, #C5C5C5);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+body.light-mode{    
+.tilebox{    
+    background: var(--light-bg-2); 
+    border: 1px solid var(--light-bg-2);    
+    .iconwizard{        
+        background: var(--light-input-button);       
+        img{
+            filter: brightness(0);
+        } 
+    }
+    .tileName{
+        color: var(--light-text);
+    }
+    &:hover{
+        border-color: var(--Primary-1);        
+    }
+}
+
+.verticalline{    
+    border-left: 2px solid var(--light-input-button);
+}
+.hpCateActive{
+    color: var(--light-text-secondary);
+    .active{
+        color: var(--light-text);
+    }
+}
+
+.quesListItem{
+background: var(--light-bg-2);
+color: var(--light-text);
+}
+
+.fiterSelectlabel{
+    .tagLabel{        
+        background: var(--light-input-button);        
+        color: var(--light-text);        
+        .background{
+            color: var(--light-text-grey);
+        }
+    }
+}
+
+.backbtn{    
+    background: var(--light-input-button);   
+    svg path[fill="white"] {
+        fill: var(--light-text);
+    }
+}
+
+.paraTxt p{
+    color: var(--light-text-secondary);   
+}
+
+}

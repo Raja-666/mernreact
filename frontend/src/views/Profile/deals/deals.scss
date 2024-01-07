@@ -1,0 +1,226 @@
+.btnPrimary{    
+        border-radius: 8px;
+        background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+        border: 0;
+        padding: 8px 20px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        color: var(--dark-bg-dark-1, #0A0A0B);
+        &:hover{
+            color: var(--dark-text, #F6F6F6);
+            background: var(--dark-input-button, #21252B);
+        }
+}
+
+.dealsCard{
+    border-radius: 16px;
+    background: var(--dark-bg-dark-2, #14161B);
+    padding: 16px;
+    border: 1px solid transparent;
+    // margin-bottom: 20px;
+    &:hover, &.active{
+        background: linear-gradient(0deg, #14161B,#14161B) padding-box, linear-gradient(145deg, rgb(255, 169, 0) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 237, 174) 100%) border-box;        
+    }
+    .dealsTopImg{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+}
+
+.cushr{
+    margin: 12px 0px;
+    border-color: var(--dark-input-button, #21252B);
+}
+
+.btnActive{
+    height: 24px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: var(--dark-input-button, #21252B);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--dark-primary-1, #55f764);
+    border: 0; 
+}
+
+.btnInactive{
+    color: var(--dark-text-grey, #797F8A);
+    border-radius: 8px;
+    background: var(--dark-input-button, #21252B);
+    height: 24px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    border: 0; 
+}
+.btnAccepted{
+    border-radius: 8px;
+    background: var(--dark-input-button, #21252B);
+    color: var(--dark-green, #00B976);
+    height: 24px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    border: 0; 
+}
+
+.iconBtn{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridTxt{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+}
+.dealImg{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    img{
+        width: 116px;
+        height: 116px;
+        border-radius: 8px;
+    }
+    .rightTxt{
+        border-radius: 8px;
+        height: 24px;
+        padding: 4px 8px;
+        background: rgba(0, 0, 0, 0.40);
+        backdrop-filter: blur(19px);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--dark-text, #F6F6F6);
+        position: absolute;
+        right: 4px;
+        top: 4px;
+    }
+}
+
+.dropdownMenu{    
+    padding: 12px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    background: rgba(37, 42, 49, 0.70);
+    backdrop-filter: blur(19px);
+    button {
+        background-color: transparent;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        padding: 0px;
+        margin-bottom: 16px;
+        color: var(--dark-text, #F6F6F6);
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &:focus, &:hover, &:active{
+            background-color: transparent;     
+            color: var(--dark-primary-1, #55f764);
+        }
+    }
+}
+
+.deal_gridrow{
+    display: grid;
+    gap: 28px;
+    transition: all 1s linear;
+    @media (min-width: 1200px) {
+        &.g-col-3 {
+             grid-template-columns: auto auto auto;           
+        }
+
+        &.g-col-4 {            
+            grid-template-columns: auto auto auto auto;            
+        }
+     }
+
+     @media only screen and (max-width: 1199px) and (min-width: 992px) {
+        &.g-col-3 {
+            grid-template-columns: auto auto auto;           
+       }
+
+       &.g-col-4 {            
+           grid-template-columns: auto auto auto auto;            
+       }
+     }
+
+     @media only screen and (max-width: 991px) and (min-width: 768px) {
+        &.g-col-3 {
+             grid-template-columns: auto auto;           
+        }
+
+        &.g-col-4 {            
+            grid-template-columns: auto auto auto;            
+        }
+     }
+     @media only screen and (max-width: 767px) and (min-width: 600px) {
+        &.g-col-3 {
+             grid-template-columns: auto auto;           
+        }
+
+        &.g-col-4 {            
+            grid-template-columns: auto auto;            
+        }
+     }
+     @media only screen and (max-width: 526px) and (min-width: 599px){
+        &.g-col-3 {
+             grid-template-columns: auto auto;           
+        }
+
+        &.g-col-4 {            
+            grid-template-columns: auto auto;            
+        }
+     }
+     @media only screen and (max-width: 525px){
+        &.g-col-3 {
+             grid-template-columns: auto;           
+        }
+
+        &.g-col-4 {            
+            grid-template-columns: auto ;            
+        }
+     }
+}
+
+.textEllipse{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 65px;
+    white-space: nowrap;
+}
+
+body.light-mode{   
+    .dealsCard{       
+        background: var(--light-bg-2);        
+        // margin-bottom: 20px;
+        &:hover, &.active{
+            background: linear-gradient(0deg, #F2F3F5,#F2F3F5) padding-box, linear-gradient(145deg, rgb(255, 169, 0) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 237, 174) 100%) border-box;        
+        }        
+    }
+    .cushr{
+        border-color: var(--light-input-button)
+    }
+    .btnActive{
+        background: var(--light-input-button);
+    }
+}

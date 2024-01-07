@@ -1,0 +1,365 @@
+.nftBannerCnt{
+    width:100%;
+    height:535px;
+    position:relative;
+    border-radius:16px;
+    overflow:hidden;
+    margin-bottom:25px;
+
+    img{
+        &.nftBanner{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+    }
+
+    .counterCnt{
+        position: absolute;
+        left:15px;
+        top:15px;
+        width:calc(100% - 30px);
+
+        .counter{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color:#F6F6F6;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.32);
+            /* BG Blur - Button */
+            backdrop-filter: blur(19px);
+            padding:8px;
+            margin:2px 0px;
+        }
+    }
+}
+.nftCard{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #15171C;
+    margin-bottom:15px;
+
+    .cardLabel{
+        color: #C5C5C5;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    h3{
+        color:#F6F6F6;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px;
+    }
+    .btn{
+        height:50px;
+        &.iconBtn-h40{
+            height:auto;
+        }
+
+        &:hover{
+            svg{
+                path{
+                    fill:#fff;
+                }
+            }
+        }
+    }
+
+    .tableLabel{
+        color: #C5C5C5;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+        
+        display:block;
+    }
+    .tableValue{
+        color: #F6F6F6;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        padding:6px 0px;
+        display:block;
+
+        &.yellowTxt{
+            color:#55f764;
+        }
+    }
+    
+    &.detCard{
+        min-height:550px; 
+
+        .tab-content{
+            max-height:464px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+
+    .table{
+        .btn{
+            height:28px;
+            border-radius:6px;
+        }
+
+        .tableTag{
+            display: inline-flex;
+            height: 28px;
+            min-height: 28px;
+            padding: 4px 8px;
+            align-items: center;
+            border-radius: 8px;
+            background: #1F2329;
+        }
+    }
+    .traitCnt{
+        width:100%;
+        padding:12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 12px;
+        position:relative;
+        background: #1F2329;
+        margin-bottom:15px;
+        transition: all 0.5s;
+
+
+        &:before{
+            content:'';
+			width:calc(100%);
+			height:calc(100%);
+            position:absolute;
+			top:0px;
+            left:0px;
+            background:transparent;
+            border-radius:12px;
+            z-index: 2;
+		}      
+
+        &:hover{
+            background: rgb(255,169,0);
+		    // background: linear-gradient(134deg, rgba(255,169,0,1) 0%, rgba(255,255,255,0) 50%, rgba(255,237,174,1) 100%);
+            background: linear-gradient(162deg, #55f764, rgba(255, 255, 255, 0), #FFDD65);
+            cursor:pointer;
+            &:before{
+                background: #1F2329;
+                width:calc(100% - 2px);
+			    height:calc(100% - 2px);
+                top:1px;
+			    left:1px;
+            }
+        }
+
+        .cardLabel{
+            font-size:14px;
+            margin-bottom:5px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .cardValue{
+            color: var(--dark-primary-1, #c5c5c5);
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;  
+            z-index: 3;
+        }
+    }
+}
+
+.btnAccept{
+    border-radius: 8px;
+border: 1px solid var(--Primary-1, #FFA800);
+background: var(--dark-input-button, #1D2025);
+min-width: 96px;
+height: 28px;
+line-height: 0;
+box-shadow: none;
+outline: 0;
+span{
+    background: var(--light-gradient-light, linear-gradient(137deg, #FFAB00 6.3%, #FFD76F 95.08%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+}
+&:hover{
+    border-radius: 8px;
+border: 1px solid var(--Primary-1, #FFA800);
+background: var(--dark-borders-hover-button, #2D3139);
+}
+}
+
+.btn.btncancel{
+    border-radius: 8px;
+    background: var(--dark-input-button, #1D2025);
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--Red, #FE2626);
+    &:hover{
+        border-color: var(--Red, #FE2626);
+    }
+}
+
+.nftTables_offers{
+    .thead{
+        tr{
+            th{
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    }
+    .tbody{
+        tr{
+            td{
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    }
+}
+
+// .nav-tabs{
+//     border-bottom:0px;
+
+//     .nav-link{
+//         color:#F6F6F6;
+//         font-size: 16px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: 24px;
+//         padding:8px;
+//         border-radius: 8px;
+//         background: var(--dark-input-button, #1F2329);
+//         margin-right:12px;
+//         border:none;
+
+//         &:hover{
+//             cursor:pointer;
+//         }
+
+//         &:hover,&.active{
+//             background: var(--dark-gradient, linear-gradient(90deg, #55f795 0%, #55f764 100%));
+//             color:#1F2329;
+//             border:none;
+//             font-weight: 600;
+//         }
+//     }    
+// }
+
+.darkTabs{
+    border-bottom:0px;
+    border-radius: 8px;
+    background: #1F2329;
+    justify-content: space-between;
+    width: 100%;
+    .nav-link{
+        color: #C5C5C5;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        opacity: 0.6;
+        padding:8px 20px;
+        border-radius: 8px;
+        min-width:120px;
+        text-align:center;
+        border:none;
+
+        &:hover{
+            cursor:pointer;
+        }
+
+        &:hover,&.active{
+            color: #55f764;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            opacity: 1;
+            background: #2E343D;
+            border:none;
+        }
+    }
+}
+
+
+body.light-mode{
+    .nftCard{
+        background: var(--light-bg-2);
+        h3{
+            color: var(--light-grey);
+        }
+        .cardLabel {
+            color: var(--light-text-secondary);
+        }
+        .tableLabel {
+            color: var(--light-text-secondary);        
+        }
+        .tableValue{
+            color: var(--light-text);
+        }
+        .traitCnt{
+            background: var(--light-input-button);
+            &:hover{
+                background: #55f764;
+                background: linear-gradient(134deg, #55f764 0%, rgba(255, 255, 255, 0) 50%, #55f795 100%);
+                &:before {
+                    background: var(--light-input-button);
+                }
+            }       
+            
+            .cardValue{
+                color: var(--light-grey);
+            }
+        }
+    }
+    .trad_tab_hd.navNftDetails  {
+		background-color: transparent;	
+		li.nav-item {
+            margin-right: 5px;
+			a.nav-link {
+				background: var(--light-input-button);		
+                color: var(--light-text);		
+				&:hover, &.active{
+					background: var(--light-gradient-light);	
+                    color: var(--light-text);			
+				}			
+			}
+		}
+	}
+    .darkTabs {
+		background: var(--light-input-button);
+		li.nav-item {
+			a.nav-link {
+				color: var(--light-text-grey);
+				background-color: transparent;	
+				&:hover, &.active{
+					background: var(--light-borders-hover-button);
+					color: var(--Button-Text, #0A0A0B);
+				}			
+			}
+		}
+	}
+}
