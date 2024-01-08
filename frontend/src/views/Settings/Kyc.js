@@ -118,9 +118,9 @@ export const Kyc = ({ rejectedMessage }) => {
     frontStatus: Yup.boolean(),
     backStatus: Yup.boolean(),
     selfiStatus: Yup.boolean(),
-    frontReason: Yup.string(),
-    backReason: Yup.string(),
-    selfiReason: Yup.string(),
+    frontReason: Yup.string().nullable().notRequired(),
+    backReason: Yup.string().nullable().notRequired(),
+    selfiReason: Yup.string().nullable().notRequired(),
   });
 
   // const { setValue } = useForm({ resolver: yupResolver(validationSchema), })
@@ -142,12 +142,12 @@ export const Kyc = ({ rejectedMessage }) => {
       frontSideImg: null,
       backSideImg: null,
       kycSelfieImg: null,
-      frontStatus: null,
-      backStatus: null,
-      selfiStatus: null,
-      frontReason: null,
-      backReason: null,
-      selfiReason: null,
+      frontStatus: false,
+      backStatus: false,
+      selfiStatus: false,
+      frontReason: "",
+      backReason: "",
+      selfiReason: "",
     },
     mode: 'onChange'
   });
