@@ -123,12 +123,13 @@ const Kyc = () => {
                   <CTableDataCell>{address}</CTableDataCell>
                   <CTableDataCell>{sts}</CTableDataCell>
                   <CTableDataCell>
-                    {status !== 1 && <button onClick={() => handleUpdate(_id, 1)}>Verify</button>}
+                    {status !== 1 && <button onClick={() => setOpen(!open)}>Verify</button>}
                   </CTableDataCell>
 
                   <CTableDataCell> {status !== 2 && <button onClick={() => {
                     handleSetterSrc(item)
-                    handleUpdate(_id, 2)
+                    setOpen(!open);
+                    // handleUpdate(_id, 2)
                   }}>Reject</button>} </CTableDataCell>
                   {status === 2 && <CTableDataCell>{rejectMessage}</CTableDataCell>}
                 </CTableRow>
@@ -156,6 +157,7 @@ const Kyc = () => {
             <div
               style={{
                 display: 'flex',
+                flexDirection:'column',
                 gap: 2,
                 justifyContent: 'space-between'
               }}
