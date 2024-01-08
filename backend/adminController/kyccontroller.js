@@ -22,8 +22,15 @@ const handleUpdateKyc = async (req, res) => {
 
 
         if (reqData.flag === 0) {
-            let d = reqData.type.split('Reason').at(0) + 'Status'
-            updateQ = { [reqData.type]: reqData.reason, [d]: false }
+            let fieldName = reqData.type.split('Reason').at(0)
+            let tag = fieldName + 'Status'
+            let fImage = {
+                'back':'backSideProof',
+                'front':'frontSideProof',
+                'selfi':'selfieProof'
+            }
+            let img = fImage[fieldName]
+            updateQ = { [reqData.type]: reqData.reason, [tag]: false , [img] : "" }
         }else{
             let d = reqData.type.split('Status').at(0) + 'Reason'
             updateQ = { [reqData.type]: true , [d] : '' }
